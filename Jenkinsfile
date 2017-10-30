@@ -14,7 +14,7 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stages('Test') {
+        stage('Test') {
             sh './jenkins/scripts/test.sh'
         }
     }
